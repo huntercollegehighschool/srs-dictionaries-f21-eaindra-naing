@@ -16,4 +16,15 @@ charcount("The thing.")
 '''
 
 def charcount(message):
-  pass  # delete this line when you start writing your code
+  alphabet = {}
+  for char in message:
+    alphabet.setdefault(char, 0)
+    alphabet [char] +=1
+  return alphabet
+  print (charcount(message))
+
+""""
+if program == '1':
+  message = input("Enter a message: ")
+  print(charcount(message)
+"""

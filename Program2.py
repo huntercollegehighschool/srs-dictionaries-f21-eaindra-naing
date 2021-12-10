@@ -12,5 +12,17 @@ exponents(3)
 --> returns {2: 8, 3: 27, 4: 64, 5: 125, 6: 216, 7: 343, 8: 512, 9: 729, 10: 1000, 11: 1331}
 '''
 
-def exponents(exp): #do not change this line
-  pass #delete this line when you start writing your code
+def exponents(exponent): #do not change this line
+  integers = [2,3,4,5,6,7,8,9,10,11]
+  exponents = [integer ** exponent for integer in integers]
+  #for exponent in integers:
+    #return integers ** exponent
+  print (exponents.items())
+
+
+
+"""
+elif program == '2':
+  exponent = int(input("Number/power: "))
+  print(exponents(exponent))
+"""
